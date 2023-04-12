@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb22379432.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section id="landing">
         <nav>
-            <div class="row">
+            <div class="row row__nav">
                 <div class="nav">
                     <a href="" class="logo">
                             <img class="logo__img" src="./assets/Treactlogo.svg" alt="logo">
@@ -23,7 +23,7 @@
                         <li><a href="#" class="nav__link">Pricing</a></li>
                         <li><a href="#" class="nav__link">Contact Us</a></li>
                         <li><a href="#" class="nav__link nav__link--login">Login</a></li>
-                        <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
+                        <li><a href="#" class="nav__link btn">Sign Up</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     </p>
                     <div class="header__email">
                         <input class="email__input" type="text" placeholder="Your E-mail Address">
-                        <button class="email__btn">Get Started</button>
+                        <button class="btn btn__email">Get Started</button>
                     </div>
                     <div class="header__credits">
                         OUR TRUSTED CUSTOMERS
@@ -59,13 +59,13 @@
         <section id="features">
             <div class="container">
                 <div class="row row__features">
-                    <h5><span class="purple">FEATURES</span></h5>
+                    <h5 class="features__title"><span class="purple">FEATURES</span></h5>
                     <h2>We Have Amazing <span class="purple">Service.</span></h2>
                     <p class="features__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="service__wrapper">
                         <div class="service">
                             <div class="service__img">
-                                <i class="fas fa-bolt"></i>
+                                <i class="fa-solid fa-shield-halved"></i>
                             </div>
                             <div class="service__description">
                                 <h3 class="service__title">
@@ -78,14 +78,40 @@
                         </div>                            
                         <div class="service">
                             <div class="service__img">
-                                <i class="fas fa-bolt"></i>
+                                <i class="fa-solid fa-headset"></i>
                             </div>
                             <div class="service__description">
                                 <h3 class="service__title">
-                                    Secure
+                                    24/7 Support
                                 </h3>
                                 <p class="service__para">
-                                    We strictly only deal with vendors that provide top notch security online instantly.
+                                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.                                
+                                </p>
+                            </div>
+                        </div>                            
+                        <div class="service">
+                            <div class="service__img">
+                                <i class="fa-solid fa-sliders"></i>                            
+                            </div>
+                            <div class="service__description">
+                                <h3 class="service__title">
+                                    Customizable
+                                </h3>
+                                <p class="service__para">
+                                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.                                
+                                </p>
+                            </div>
+                        </div>                            
+                        <div class="service">
+                            <div class="service__img">
+                                <i class="fas fa-right-left fa-rotate-90"></i>
+                            </div>
+                            <div class="service__description">
+                                <h3 class="service__title">
+                                    Reliable
+                                </h3>
+                                <p class="service__para">
+                                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.                                
                                 </p>
                             </div>
                         </div>                            
@@ -95,52 +121,209 @@
                             </div>
                             <div class="service__description">
                                 <h3 class="service__title">
-                                    Secure
+                                    Fast
                                 </h3>
                                 <p class="service__para">
-                                    We strictly only deal with vendors that provide top notch security online instantly.
+                                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.                                
                                 </p>
                             </div>
                         </div>                            
                         <div class="service">
                             <div class="service__img">
-                                <i class="fas fa-bolt"></i>
+                                <i class="fa-solid fa-hand-holding-heart"></i>
                             </div>
                             <div class="service__description">
                                 <h3 class="service__title">
-                                    Secure
+                                    Easy
                                 </h3>
                                 <p class="service__para">
-                                    We strictly only deal with vendors that provide top notch security online instantly.
+                                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.                                
                                 </p>
                             </div>
                         </div>                            
-                        <div class="service">
-                            <div class="service__img">
-                                <i class="fas fa-bolt"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quality">
+            <div class="container">
+                <div class="row row__quality">
+                    <div class="quality__description">
+                        <h5 class="quality__title"><span class="purple">QUALITY WORK</span></h5>
+                        <h2>Designed & Developed by <span class="purple">Professionals.</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="">
+                            <button class="btn btn__quality">Learn More</button>
+                        </a>
+                    </div>
+                    <div class="quality__screenshot-img">
+                        <figure class="quality__img--wrapper">
+                            <img class="quality__img" src="./assets/hero-screenshotpng.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="steps">
+            <div class="container">
+                <div class="row row__steps">
+                    <div class="steps__laptop">
+                        <figure class="steps__img--wrapper">
+                            <img class="steps__img" src="./assets/laptop hero-screenshot.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="steps__description">
+                        <h5 class="steps__title"><span class="purple">STEPS</span></h5>
+                        <h2 class="h2__steps">Easy to <span class="purple">Get Started.</span></h2>
+                        <ul class="steps__list">
+                            <li class="steps__info--wrapper">
+                                <div class="steps__number">
+                                    01
+                                </div>
+                                <div class="steps__info">
+                                    <h6 class="steps__subtitle">Register</h6>
+                                    <p class="steps__para">
+                                        Create an account with us using Google or Facebook.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="steps__info--wrapper">
+                                <div class="steps__number">
+                                    02
+                                </div>
+                                <div class="steps__info">
+                                    <h6 class="steps__subtitle">Download</h6>
+                                    <p class="steps__para">
+                                        Browse and Download the template that you like from the marketplace.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="steps__info--wrapper">
+                                <div class="steps__number">
+                                    03
+                                </div>
+                                <div class="steps__info">
+                                    <h6 class="steps__subtitle">Run</h6>
+                                    <p class="steps__para">
+                                        Follow the instructions to setup and customize the template to your needs.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="values">
+            <div class="container">
+                <div class="row row__values">
+                    <div class="values__description">
+                        <h5 class="values__title"><span class="purple">VALUES</span></h5>
+                        <h2>We Always Abide by our <span class="purple">Principles.</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="value--wrapper">
+                            <div class="value">
+                                <div class="value__img-title">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <h3 class="value__title">Affordable</h3>
+                                </div>
+                                <div class="value__info">
+                                    <p class="value__para">We promise to offer you the best rate we can - at par with the industry standard.</p>
+                                </div>
                             </div>
-                            <div class="service__description">
-                                <h3 class="service__title">
-                                    Secure
-                                </h3>
-                                <p class="service__para">
-                                    We strictly only deal with vendors that provide top notch security online instantly.
-                                </p>
+                            <div class="value">
+                                <div class="value__img-title">
+                                    <i class="fas fa-suitcase"></i>
+                                    <h3 class="value__title">Professionalism</h3>
+                                </div>
+                                <div class="value__info">
+                                    <p class="value__para">We assure you that our templates are designed and created by professional designers.</p>
+                                </div>
                             </div>
-                        </div>                            
-                        <div class="service">
-                            <div class="service__img">
-                                <i class="fas fa-bolt"></i>
+                        </div>
+                        <a href="">
+                            <button class="btn btn__value">Learn More</button>
+                        </a>
+                    </div>
+                    <div class="value__prototype">
+                        <figure class="value__img--wrapper">
+                            <img class="value__img" src="./assets/prototype-illustration.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <div class="row row__pricing">
+                    <h5 class="pricing__title"><span class="purple">PRICING</span></h5>
+                    <h2>Reasonable & Flexible <span class="purple">Plans.</span></h2>
+                    <p class="pricing__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="plans">
+                        <div class="plan">
+                            <div class="plan__highlight green"></div>
+                            <div class="plan__header">
+                                <span class="plan__title">PERSONAL</span>
+                                <span class="plan__price">$17.99</span>
+                                <span class="plan__duration">MONTHLY</span>
                             </div>
-                            <div class="service__description">
-                                <h3 class="service__title">
-                                    Secure
-                                </h3>
-                                <p class="service__para">
-                                    We strictly only deal with vendors that provide top notch security online instantly.
-                                </p>
+                            <div class="plan__features">
+                                <span class="plan__feature plan__feature-primary">For Individuals</span>
+                                <span class="plan__feature">30 Templates</span>
+                                <span class="plan__feature">7 Landing Pages</span>
+                                <span class="plan__feature">12 Internal Pages</span>
+                                <span class="plan__feature">Basic Assistance</span>
                             </div>
-                        </div>                            
+                            <div class="plan__action">
+                                <a href="">
+                                    <button class="btn__plan green">BUY NOW</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="plan">
+                            <div class="plan__highlight indigo"></div>
+                            <div class="plan__header">
+                                <span class="plan__title">Personal</span>
+                                <span class="plan__price">$17.99</span>
+                                <span class="plan__duration">MONTHLY</span>
+                            </div>
+                            <div class="plan__features">
+                                <span class="plan__feature plan__feature-primary">For Individuals</span>
+                                <span class="plan__feature">30 Templates</span>
+                                <span class="plan__feature">7 Landing Pages</span>
+                                <span class="plan__feature">12 Internal Pages</span>
+                                <span class="plan__feature">Basic Assistance</span>
+                            </div>
+                            <div class="plan__action">
+                                <a href="">
+                                    <button class="btn__plan">BUY NOW</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="plan">
+                            <div class="plan__highlight red"></div>
+                            <div class="plan__header">
+                                <span class="plan__title">Personal</span>
+                                <span class="plan__price">$17.99</span>
+                                <span class="plan__duration">MONTHLY</span>
+                            </div>
+                            <div class="plan__features">
+                                <span class="plan__feature plan__feature-primary">For Individuals</span>
+                                <span class="plan__feature">30 Templates</span>
+                                <span class="plan__feature">7 Landing Pages</span>
+                                <span class="plan__feature">12 Internal Pages</span>
+                                <span class="plan__feature">Basic Assistance</span>
+                            </div>
+                            <div class="plan__action">
+                                <a href="">
+                                    <button class="btn__plan">BUY NOW</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
