@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/eb22379432.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -20,11 +21,27 @@
                     <ul class="nav__links">
                         <li><a href="#" class="nav__link">About</a></li>
                         <li><a href="#" class="nav__link">Blog</a></li>
-                        <li><a href="#" class="nav__link">Pricing</a></li>
+                        <li><a href="#pricing" class="nav__link">Pricing</a></li>
                         <li><a href="#" class="nav__link">Contact Us</a></li>
                         <li><a href="#" class="nav__link nav__link--login">Login</a></li>
                         <li><a href="#" class="nav__link btn">Sign Up</a></li>
                     </ul>
+                    <button class="btn__menu btn__menu--open" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">About</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Blog</a></li>
+                            <li class="menu__list"><a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Login</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link btn menu__link--primary" onclick="closeMenu()">Sign Up</a></li>
+                        </ul>
+                    </div>        
                 </div>
             </div>
         </nav>
@@ -60,7 +77,7 @@
             <div class="container">
                 <div class="row row__features">
                     <h5 class="features__title"><span class="purple">FEATURES</span></h5>
-                    <h2>We Have Amazing <span class="purple">Service.</span></h2>
+                    <h2 class="h2__features">We Have Amazing <span class="purple">Service.</span></h2>
                     <p class="features__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="service__wrapper">
                         <div class="service">
@@ -151,7 +168,7 @@
                 <div class="row row__quality">
                     <div class="quality__description">
                         <h5 class="quality__title"><span class="purple">QUALITY WORK</span></h5>
-                        <h2>Designed & Developed by <span class="purple">Professionals.</span></h2>
+                        <h2 class="h2__small">Designed & Developed by <span class="purple">Professionals.</span></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <a href="">
                             <button class="btn btn__quality">Learn More</button>
@@ -176,7 +193,7 @@
                     </div>
                     <div class="steps__description">
                         <h5 class="steps__title"><span class="purple">STEPS</span></h5>
-                        <h2 class="h2__steps">Easy to <span class="purple">Get Started.</span></h2>
+                        <h2 class="h2__steps h2__small">Easy to <span class="purple">Get Started.</span></h2>
                         <ul class="steps__list">
                             <li class="steps__info--wrapper">
                                 <div class="steps__number">
@@ -222,7 +239,7 @@
                 <div class="row row__values">
                     <div class="values__description">
                         <h5 class="values__title"><span class="purple">VALUES</span></h5>
-                        <h2>We Always Abide by our <span class="purple">Principles.</span></h2>
+                        <h2 class="h2__small">We Always Abide by our <span class="purple">Principles.</span></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <div class="value--wrapper">
                             <div class="value">
@@ -261,7 +278,7 @@
             <div class="container">
                 <div class="row row__pricing">
                     <h5 class="pricing__title"><span class="purple">PRICING</span></h5>
-                    <h2>Reasonable & Flexible <span class="purple">Plans.</span></h2>
+                    <h2 class="h2__pricing">Reasonable & Flexible <span class="purple">Plans.</span></h2>
                     <p class="pricing__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="plans">
                         <div class="plan">
@@ -279,7 +296,7 @@
                                 <span class="plan__feature">Basic Assistance</span>
                             </div>
                             <div class="plan__action">
-                                <a href="">
+                                <a href="#">
                                     <button class="btn__plan green">BUY NOW</button>
                                 </a>
                             </div>
@@ -299,7 +316,7 @@
                                 <span class="plan__feature white">Priority Assistance</span>
                             </div>
                             <div class="plan__action">
-                                <a href="">
+                                <a href="#">
                                     <button class="btn__plan btn__purple">BUY NOW</button>
                                 </a>
                             </div>
@@ -319,7 +336,7 @@
                                 <span class="plan__feature">Personal Assistance</span>
                             </div>
                             <div class="plan__action">
-                                <a href="">
+                                <a href="#">
                                     <button class="btn__plan red">BUY NOW</button>
                                 </a>
                             </div>
@@ -384,7 +401,7 @@
                         <img class="logo__img logo__img--footer" src="./assets/treactlogo-light.svg" alt="">
                         Treact Inc.
                     </div>
-                    <div class="footer__copyright">&copy; Treact Inc. All Rights Reserved</div>
+                    <div class="footer__copyright">&copy; 2023 Treact Inc. All Rights Reserved</div>
                     <div class="footer__socials">
                         <a class="social__link link-f" href="https://facebook.com">
                             <i class="fa-brands fa-facebook-f"></i>
