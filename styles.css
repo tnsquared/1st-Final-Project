@@ -339,7 +339,6 @@ Header
 
 .header__img-desk{
     width: 100%;
-    max-width: 512px;
 }
 
 /*
@@ -887,6 +886,7 @@ footer{
 
     .header__desk{
         width: 100%;
+        max-width: 512px;
         margin-top: 48px;
     }
 
